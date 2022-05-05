@@ -1,0 +1,67 @@
+.about-us{
+  background-color: #ebebeb;
+  padding-top: 135px;
+  padding-bottom: 65px;
+  
+  &__content{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  &__info{
+    width: 820px;
+    margin-right: 20px;
+  }
+  
+  &__heading{
+    font-size: 53px;
+    line-height: 53px;
+  }
+  
+  &__title{
+    margin-top: 28px;
+    margin-bottom: 16px;
+  }
+  
+  &__news-date{
+    margin-left: 41px;
+  }
+  
+  &__news-text{
+    font-family: 'Teko';
+    margin-top: 11px;
+    font-size: 26px;
+    line-height: 26px;
+  }
+  
+  &__top{
+    margin-bottom: 37px;
+  }
+}
+
+@media (max-width: 700px){
+  .about-us__heading{
+    font-size: 33px;
+    line-height: 33px;
+  }
+  
+  .about-us__news-text{
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .about-us__news-date{
+    display: block;
+    margin-left: 0;
+  }
+}
+@media (max-width: 425px){
+  .about-us__content{
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 320px){
+  .about-us{
+    padding-bottom: 30px;
+  }
+}

@@ -1,0 +1,180 @@
+.services{
+  
+  &__title{
+    text-align: center;
+    color: var(--accent-color);
+    text-transform: uppercase;
+  }
+  
+  &__heading{
+    text-align: center;
+    font-size: 53px;
+    line-height: 53px;
+    margin-bottom: 82px;
+  }
+  
+  &__list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  &__item{
+    position: relative;
+    width: 291px;
+    margin-top: 66px;
+  }
+  
+  &__item:not(:last-child){
+    margin-left: 60px;
+  }
+  
+  &__item-content{
+    padding-left: 85px;
+    margin-bottom: 18px;
+  }
+  
+  &__item-content::before{
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 0px;
+    width: 68px;
+    height: 68px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+  }
+  
+  &__item-content-architecture::before{
+    content: "";
+    background-image: url("/img/Architecture.svg");
+  }
+  
+  &__item-content-design::before{
+    content: "";
+    background-image: url("/img/Interior-Design.svg");
+  }
+  
+  &__item-content-master::before{
+    content: "";
+    background-image: url("/img/Master-Planing.svg");
+  }
+  
+  &__item-content-construction::before{
+    content: "";
+    background-image: url("/img/Construction.svg");
+  }
+  
+  &__item-content-energy::before{
+    content: "";
+    background-image: url("/img/Energy-Audit.svg");
+  }
+  
+  &__item-content-documentation::before{
+    content: "";
+    background-image: url("/img/Documentation.svg");
+  }
+  
+  &__item-title{
+    font-size: 26px;
+    line-height: 26px;
+    font-weight: bold;
+  }
+  
+  &__date{
+    font-size: 11px;
+    line-height: 17px;
+    letter-spacing: 5px;
+    color: var(--accent-color);
+  }
+  
+  &__info{
+    font-size: 17px;
+    line-height: 26px;
+  }
+  
+  &__link{
+    text-transform: uppercase;
+    background-color: var(--accent-color);
+    display: block;
+    width: 391px;
+    text-align: center;
+    margin: 90px auto;
+    padding: 25px 0;
+    color: #fff;
+  }
+}
+
+@media (max-width: 700px) {
+  .services__heading{
+    text-align: center;
+    font-size: 33px;
+    line-height: 33px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services__item:not(:last-child) {
+    margin-left: 0px;
+  }
+  
+  .services__item:nth-child(odd){
+    padding-right: 20px;
+  }
+  
+  .services__item{
+    width: 50%;
+  }
+  
+  .services__link {
+    width: 200px;
+    padding: 15px 0;
+  }
+  
+  .services__item-content:before {
+    top: 0;
+    width: 48px;
+    height: 48px;
+  }
+  
+  .services__item-title{
+    font-size: 20px;
+    line-height: 20px;
+  }
+  
+  .services__info{
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 425px) {
+  .services__list{
+    flex-direction: column;
+  }
+  
+  .services__item{
+    width: 100%;
+  }
+  
+  .services__heading{
+    margin-bottom: 20px;
+  }
+  
+  .services__item-title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  
+  .services__info{
+    font-size: 17px;
+    line-height: 20px;
+  }
+  
+  .services__item:nth-child(odd){
+    padding-right: 0px;
+  }
+}

@@ -1,0 +1,53 @@
+*,
+*::after, 
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: "Open sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 26px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: inherit;
+}
+
+.page{
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+.page__body{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+ul{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-size: 17px;
+  line-height: 24px;
+  font-size: 700;
+  font-family: "Teko";
+}
+
+:root{
+  --text-color: #141414;
+  --accent-color: #99823D;
+  --opasity-color: #3D3D3D;
+}
+
+.container{
+  max-width: 1280px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
