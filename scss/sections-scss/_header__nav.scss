@@ -157,7 +157,7 @@
   &__text-heading{
     font-size: 67px;
     line-height: 67px;
-    font-family: 'Teko';
+    font-family: "Teko";
     margin-bottom: 32px;
   }
   
@@ -171,20 +171,31 @@
     display: inline-block;
     color: #fff;
     text-transform: uppercase;
+    transition: all .3s;
+    position: relative;
+    z-index: 1;
     
-    &::before{
+    
+    
+    &:before{
       content: "";
-      left: auto;
+      position: absolute;
+      bottom: 0;
       right: 0;
+      width: 0%;
+      height: 100%;
+      background-color: var(--text-color);
+      transition: all .4s;
+      z-index: -1;
     }
     
-    &:hover:before{
-      content: "";
-      right: auto;
-      left: 0;
-      width: 100%;
-      background-color: var(--text-color);
+    &:hover {
+      color: #fff;
+      &:before {
+        width: 100%;
+      }
     }
+    
   }
   
   &__text-link{
@@ -193,6 +204,30 @@
     display: inline-block;
     color: #fff;
     text-transform: uppercase;
+    transition: all .3s;
+    position: relative;
+    z-index: 1;
+    
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 100%;
+      background-color: var(--accent-color);
+      transition: all .4s;
+      z-index: -1;
+    }
+    
+    
+    &:hover {
+      color: #fff;
+      &:before {
+        width: 100%;
+      }
+    }
+    
   }
   
   &__nav-burger-icon{
