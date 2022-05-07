@@ -11,6 +11,4 @@ document.addEventListener("DOMContentLoaded", () => {
     heartIcon.classList.toggle("header__icon-bg");
   })
 
-
-
 })
