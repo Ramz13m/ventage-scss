@@ -35,15 +35,16 @@
     transform: translateX(360px);
   }
   
-  &__nav-heart-wrapper::after{
-    content: "";
+  &__nav-heart-icon-logo{
     width: 17px;
     height: 17px;
-    display: inline-block;
-    background-image: url(../../img/heartsvg.svg);
     background-position: center center;
     background-repeat: no-repeat;
     margin-left: 3px;
+  }
+
+  &__icon-bg{
+    fill: #E63946;
   }
   
   &__nav-text{

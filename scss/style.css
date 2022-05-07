@@ -7,6 +7,10 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Open sans", "Arial", sans-serif;
   font-size: 17px;
@@ -117,15 +121,16 @@ h1, h2, h3, h4, h5, h6 {
           transform: translateX(360px);
 }
 
-.header__nav-heart-wrapper::after {
-  content: "";
+.header__nav-heart-icon-logo {
   width: 17px;
   height: 17px;
-  display: inline-block;
-  background-image: url(../../img/heartsvg.svg);
   background-position: center center;
   background-repeat: no-repeat;
   margin-left: 3px;
+}
+
+.header__icon-bg {
+  fill: #E63946;
 }
 
 .header__nav-text {
