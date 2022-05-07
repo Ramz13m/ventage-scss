@@ -54,7 +54,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 17px;
   line-height: 24px;
   font-size: 700;
-  font-family: "Teko";
+  font-family: "Teko", sans-serif;
 }
 
 :root {
@@ -351,6 +351,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 47px;
     line-height: 47px;
     margin-top: 10px;
+    height: 56px;
   }
 }
 
@@ -407,6 +408,7 @@ h1, h2, h3, h4, h5, h6 {
   .header__text-heading {
     font-size: 37px;
     line-height: 37px;
+    height: 16px;
   }
 }
 
@@ -420,6 +422,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   .header__text-heading {
     margin-bottom: 10px;
+    height: 66px;
   }
 }
 
@@ -446,6 +449,7 @@ h1, h2, h3, h4, h5, h6 {
   .header__text-heading {
     font-size: 27px;
     line-height: 27px;
+    height: 56px;
   }
   .header__text {
     font-size: 16px;
