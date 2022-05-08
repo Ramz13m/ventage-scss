@@ -508,6 +508,7 @@ h1, h2, h3, h4, h5, h6 {
 .about-us__heading {
   font-size: 53px;
   line-height: 53px;
+  height: 100px;
 }
 
 .about-us__title {
@@ -530,10 +531,17 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 37px;
 }
 
+@media (max-width: 960px) {
+  .about-us__heading {
+    height: 140px;
+  }
+}
+
 @media (max-width: 700px) {
   .about-us__heading {
     font-size: 33px;
     line-height: 33px;
+    height: 70px;
   }
   .about-us__news-text {
     font-size: 20px;
@@ -555,6 +563,9 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 320px) {
   .about-us {
     padding-bottom: 30px;
+  }
+  .about-us__heading {
+    height: 120px;
   }
 }
 

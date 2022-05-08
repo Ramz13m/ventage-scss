@@ -9,6 +9,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   heartIcon.addEventListener("click", () => {
     heartIcon.classList.toggle("header__icon-bg");
-  })
+  });
+
+  // NUMBERS ANIMATION
+
+  
 
 })
