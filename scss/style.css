@@ -841,6 +841,12 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+@media (max-width: 700px) {
+  .room__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 .services__title {
   text-align: center;
   color: var(--accent-color);
