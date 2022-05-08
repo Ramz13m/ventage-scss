@@ -46,6 +46,16 @@ $(window).scroll(function() {
 
 });
 
+  // VANILLA ANIMATION 
+
   
+    VanillaTilt.init(document.querySelectorAll(".room__item"), {
+      max: 25,
+      speed: 1000
+    });
+    
+    //It also supports NodeList
+    VanillaTilt.init(document.querySelectorAll(".your-element"));
+ 
 
 })
